@@ -85,12 +85,12 @@ h6 {
   text-align: center;
   align-content: center;
   min-height: 160px;
-  border: 2px dashed red;
 }
 
 .intro-wrapper {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
+  border-radius: 5px 5px 0 0;
 
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -106,16 +106,58 @@ h6 {
 }
 
 .nav-wrapper {
+  border-radius: 5px 5px 0 0;
   grid-area: nav-wrapper;
-  border: 1px dashed lightcoral;
+  border-bottom: 1px solid var(--borderColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mainColor);
 }
 
-.left-column{
+.circle-wrapper {
+  display: flex;
+  padding: 10px;
+}
+
+.circle {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+}
+
+#circle-1 {
+  background-color: #ff605c;
+}
+
+#circle-2 {
+  background-color: #ffbd44;
+}
+
+#circle-3 {
+  background-color: #00ca4e;
+}
+
+#navbar {
+  padding: 10px;
+}
+
+#navbar li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.left-column {
   grid-area: left-column;
-  border: 1px dashed lightcoral;
 }
 
 .right-column {
   grid-area: right-column;
-  border: 1px dashed lightcoral;
 }
