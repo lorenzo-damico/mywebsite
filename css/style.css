@@ -32,7 +32,8 @@ p, li, span, label, input, textarea {
 
 a {
   text-decoration: none;
-  color: #17a2b8;
+  color: #17a3b8;
+  font-family: 'Roboto Mono', monospace;
 }
 
 ul {
@@ -77,9 +78,9 @@ h6 {
   width: 1200px;
   margin: 0 auto;
 }
+/* /TYPO */
 
-
-/* Intro section */
+/* INTRO SECTION */
 .welcome-wrapper {
   display: grid;
   text-align: center;
@@ -179,8 +180,9 @@ h6 {
 }
 
 .button-theme {
-  width: 32px;
-  height: 32px;
+  box-sizing: content-box;
+  width: 30px;
+  height: 30px;
   background-color: black;
   border: 2px solid var(--themeDotBorder);
   border-radius: 50%;
@@ -195,8 +197,6 @@ h6 {
 
 .button-theme:hover {
   border: 5px solid var(--themeDotBorder);
-  width: 35px;
-  height: 35px;
 }
 
 #light-mode {
@@ -280,7 +280,44 @@ h6 {
   bottom: -5px;
   left: -5px;
 }
+/* /INTRO SECTION */
 
+/* ABOUT ME SECTION */
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 50px 0;
+  gap: 100px;
+}
+
+.about-wrapper h4 {
+  margin: 20px 0;
+}
+
+.about-wrapper p {
+  margin: 16px 0;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--previewShadow);
+  padding: 20px 0;
+}
+
+.socials {
+  display: grid;
+  align-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.social-image {
+  width: 100%;
+}
+/* /ABOUT ME SECTION */
+
+/* MEDIA QUERY */
 @media screen and (max-width: 1200px) {
   .main-container {
     width: 95%;
@@ -299,6 +336,6 @@ h6 {
 
   .right-column {
     justify-content: center;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 }
